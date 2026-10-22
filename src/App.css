@@ -139,3 +139,14 @@ li button:hover {
   color: #ffffff;
   background-color: #477c5c;
 }
+
+.empty-state {
+  margin: 0;
+  padding: 20px;
+  color: #52654f;
+  background-color: #ffe59a;
+  border: 1px solid #f2d77f;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 1.6;
+}

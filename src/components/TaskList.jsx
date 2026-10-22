@@ -6,7 +6,11 @@ function TaskList() {
     const { tasks } = useContext(TaskContext)
 
     if (tasks.length === 0) {
-        return <p>No tasks yet. Let's plant your first little seed! 🌱</p>
+        return (
+            <p className='empty-state'>
+                No tasks yet. Let's plant your first little seed! 🌱
+            </p>
+        )
     }
 
     return (
