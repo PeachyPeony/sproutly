@@ -1,3 +1,141 @@
 #root {
   min-height: 100vh;
 }
+
+main {
+  width: min(100% - 32px, 560px);
+  margin: 0 auto;
+  padding: 56px 0;
+}
+
+h1 {
+  margin: 0;
+  color: #477c5c;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+main>p:first-of-type {
+  margin: 8px 0 32px;
+  color: #647568;
+  text-align: center;
+}
+
+main>p:nth-of-type(2) {
+  margin: 0 0 16px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+  padding: 20px;
+  background-color: #dceedc;
+  border: 1px solid #c5dec7;
+  border-radius: 16px;
+}
+
+form label {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+form>div {
+  display: flex;
+  gap: 10px;
+}
+
+form input[type='text'] {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  color: #26382b;
+  background-color: #ffffff;
+  border: 1px solid #b7cfba;
+  border-radius: 10px;
+  outline-offset: 3px;
+}
+
+form input[type='text']:focus {
+  outline: 2px solid #477c5c;
+}
+
+form button {
+  padding: 12px 16px;
+  color: #ffffff;
+  background-color: #477c5c;
+  border: none;
+  border-radius: 10px;
+  font-weight: 800;
+  transition: background-color 0.2s ease;
+}
+
+form button:hover {
+  background-color: #356447;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e0e9de;
+  border-radius: 12px;
+}
+
+li label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  cursor: pointer;
+}
+
+li input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  accent-color: #477c5c;
+  cursor: pointer;
+}
+
+li span {
+  overflow-wrap: anywhere
+}
+
+li input[type='checkbox']:checked+span {
+  color: #849187;
+  text-decoration: line-through;
+}
+
+li button {
+  flex-shrink: 0;
+  padding: 7px 10px;
+  color: #477c5c;
+  background-color: #f6faf3;
+  border: 1px solid #dceedc;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+li button:hover {
+  color: #ffffff;
+  background-color: #477c5c;
+}
